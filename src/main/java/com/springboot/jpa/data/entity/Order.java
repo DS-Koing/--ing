@@ -18,7 +18,7 @@ public class Order {
     //주문서 코드(PK)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long ORDER_CD;
+    private Long Order_cd;
 
     //장바구니 코드(FK)
     //@Column(nullable = false)

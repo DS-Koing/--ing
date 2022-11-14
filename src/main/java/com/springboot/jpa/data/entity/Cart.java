@@ -18,22 +18,24 @@ public class Cart {
     //장바구니 코드(PK)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long CART_CD;
+    private Long Cart_cd;
 
     //유저 코드(PK)
-    //@Column(nullable = false)
-    //private Long USER_CD;
+    @ManyToOne
+    @JoinColumn(name = "User_cd")
+    private User user;
 
     //음식 코드(PK)
-    //@Column(nullable = false)
-    //private Long SMENU_CD;
+    @ManyToOne
+    @JoinColumn(name = "number")
+    private Product product;
 
     //메뉴 개수
     @Column(nullable = false)
-    private Integer CART_CT;
+    private Integer Cart_ct;
 
     //추가 옵션
-    @Column(nullable = false)
-    private Long MENU_CH;
+//    @Column(nullable = false)
+//    private Long MENU_CH;
 
 }

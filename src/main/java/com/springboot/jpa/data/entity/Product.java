@@ -18,25 +18,25 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
-@ToString(exclude = "name")
+@ToString
 @Table(name = "product")
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long number;
+    private Long number; //상품 코드
 
     @Column(nullable = false)
-    private Integer menu_code;
+    private Integer menu_code; // 카테고리 코드
 
     @Column(nullable = false)
-    private String name;
+    private String name; // 상품 이름
 
     @Column(nullable = false)
-    private Integer price;
+    private Integer price; // 상품 가격
 
     @Column(nullable = false)
-    private Integer stock;
+    private Integer stock; // 상품 재고
 
     private LocalDateTime createdAt;
 
