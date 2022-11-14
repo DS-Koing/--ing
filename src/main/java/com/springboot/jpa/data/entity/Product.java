@@ -27,6 +27,9 @@ public class Product {
     private Long number;
 
     @Column(nullable = false)
+    private Integer menu_code;
+
+    @Column(nullable = false)
     private String name;
 
     @Column(nullable = false)

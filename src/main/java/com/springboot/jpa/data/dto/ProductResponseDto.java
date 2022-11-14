@@ -14,6 +14,8 @@ public class ProductResponseDto {
 
     private Long number;
 
+    private Integer menu_code;
+
     private String name;
 
     private int price;
