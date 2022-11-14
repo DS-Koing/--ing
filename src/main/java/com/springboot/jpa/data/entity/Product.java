@@ -11,6 +11,7 @@ import javax.persistence.Table;
 import lombok.*;
 
 // 예제 6.6, 예제 6.30, 6.31, 6.32, 6.33, 6.34, 6.35, 6.36, 6.37
+// lombok 어노테이션 활용 -> 생성된 메소드 확인은 Structure로
 @Entity
 @Getter
 @Setter

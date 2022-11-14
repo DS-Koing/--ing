@@ -10,7 +10,14 @@ import javax.persistence.Table;
 
 import lombok.*;
 
+// lombok 어노테이션 활용 -> 생성된 메소드 확인은 Structure로
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+@ToString()
 @Table(name = "user")
 public class User {
 

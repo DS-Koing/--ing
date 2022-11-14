@@ -1,8 +1,17 @@
 package com.springboot.jpa.data.entity;
 
+import lombok.*;
+
 import javax.persistence.*;
 
+// lombok 어노테이션 활용 -> 생성된 메소드 확인은 Structure로
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+@ToString()
 @Table(name="Cart")
 public class Cart {
 
