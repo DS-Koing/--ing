@@ -14,7 +14,7 @@ import lombok.ToString;
 @Builder
 public class ProductDto {
 
-    private Integer menu_code;
+//    private Integer menu_code;
 
     private String name;
 
